@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="2" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-15T11:27:24 IST" name="Suite" finished-at="2022-10-15T11:28:10 IST" duration-ms="46311">
+    <groups>
+    </groups>
+    <test started-at="2022-10-15T11:27:24 IST" name="TestChrome" finished-at="2022-10-15T11:27:32 IST" duration-ms="7848">
+      <class name="test.ActitimeLoginLogout">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test.ActitimeLoginLogout@235ecd9f]" started-at="2022-10-15T11:27:24 IST" name="setup" finished-at="2022-10-15T11:27:32 IST" duration-ms="7749" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:test.ActitimeLoginLogout@235ecd9f]" started-at="2022-10-15T11:27:32 IST" name="login" finished-at="2022-10-15T11:27:32 IST" duration-ms="52" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+  (Driver info: chromedriver=105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'CBT-03-44', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52862}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}), userDataDir=C:\Users\CBT\AppData\Local\Temp\scoped_dir8864_455656662}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=106.0.5249.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: faa14a40baab7086c9e5b0bd027af612
+*** Element info: {Using=id, value=username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+  (Driver info: chromedriver=105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'CBT-03-44', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52862}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}), userDataDir=C:\Users\CBT\AppData\Local\Temp\scoped_dir8864_455656662}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=106.0.5249.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: faa14a40baab7086c9e5b0bd027af612
+*** Element info: {Using=id, value=username}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+at org.openqa.selenium.By$ById.findElement(By.java:218)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.getWrappedElement(Unknown Source)
+at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:49)
+at com.google.common.collect.Iterators$8.transform(Iterators.java:817)
+at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+at com.google.common.collect.Iterators.addAll(Iterators.java:365)
+at com.google.common.collect.Lists.newArrayList(Lists.java:162)
+at com.google.common.collect.Lists.newArrayList(Lists.java:146)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:572)
+at generics.Helper.highlightelement(Helper.java:12)
+at pom.LoginPage.loginMethod(LoginPage.java:45)
+at test.ActitimeLoginLogout.login(ActitimeLoginLogout.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.ActitimeLoginLogout@235ecd9f]" started-at="2022-10-15T11:27:32 IST" name="teardown" finished-at="2022-10-15T11:27:32 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.ActitimeLoginLogout -->
+    </test> <!-- TestChrome -->
+    <test started-at="2022-10-15T11:27:24 IST" name="TestFirefox" finished-at="2022-10-15T11:28:10 IST" duration-ms="46311">
+      <class name="test.ActitimeLoginLogout">
+        <test-method is-config="true" signature="executionstart()[pri:0, instance:test.ActitimeLoginLogout@5386659f]" started-at="2022-10-15T11:27:24 IST" name="executionstart" finished-at="2022-10-15T11:27:24 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executionstart -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:test.ActitimeLoginLogout@5386659f]" started-at="2022-10-15T11:27:24 IST" name="setup" finished-at="2022-10-15T11:28:10 IST" duration-ms="46251" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+n":"Вікіпэдыя, вольная энцыкляпэдыя","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["be-tarask"]},{"name":"Wikipedia (sv)","description":"Wikipedia, den fria encyklopedin","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sv-SE"]},{"name":"ວິກິພີເດຍ (lo)","description":"ວິກິພີເດຍ, ສາລານຸກົມເສລີ","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lo"]},{"name":"Wikipedija (sl)","description":"Wikipedija, prosta enciklopedija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sl"]},{"name":"Vikipēdija","description":"Vikipēdija, brīvā enciklopēdija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lv"]},{"name":"Biquipedia (an)","description":"A enciclopedia Libre","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["an"]}],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":null,"maxVersion":null}],"targetPlatforms":[],"seen":true,"dependencies":[],"incognito":"spanning","userPermissions":{"permissions":[],"origins":[]},"icons":{"16":"favicon.ico"},"iconURL":null,"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"installTelemetryInfo":null,"recommendationState":null,"rootURI":"resource://search-extensions/wikipedia/","location":"app-builtin"}
+1665813447477addons.xpiDEBUGLoading bootstrap scope from resource://search-extensions/wikipedia/
+1665813447477addons.xpiDEBUGCalling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1665813447477addons.xpiDEBUGCalling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1665813451365addons.xpiDEBUGCalling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1665813451366addons.xpiDEBUGCalling bootstrap method shutdown on webcompat@mozilla.org version 6.2.0
+1665813451368addons.xpiDEBUGCalling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1665813451369addons.xpiDEBUGCalling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1665813451376addons.xpiDEBUGCalling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1665813451581addons.managerDEBUGbefore shutdown
+1665813451584addons.managerDEBUGshutdown
+1665813451584addons.managerDEBUGCalling shutdown blocker for XPIProvider
+1665813451585addons.xpiDEBUGshutdown
+1665813451585addons.xpi-utilsDEBUGshutdown
+1665813451585addons.managerDEBUGCalling shutdown blocker for GMPProvider
+1665813451585addons.managerDEBUGCalling shutdown blocker for PluginProvider
+1665813451585addons.managerDEBUGAsync provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 2796, Chrome_ChildThread] WARNING: pipe error: 109: file z[Parent 8252, Gecko_IOThread] WARNING: pipe error: 232: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 502
+
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'CBT-03-44', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+n":"Вікіпэдыя, вольная энцыкляпэдыя","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["be-tarask"]},{"name":"Wikipedia (sv)","description":"Wikipedia, den fria encyklopedin","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sv-SE"]},{"name":"ວິກິພີເດຍ (lo)","description":"ວິກິພີເດຍ, ສາລານຸກົມເສລີ","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lo"]},{"name":"Wikipedija (sl)","description":"Wikipedija, prosta enciklopedija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sl"]},{"name":"Vikipēdija","description":"Vikipēdija, brīvā enciklopēdija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lv"]},{"name":"Biquipedia (an)","description":"A enciclopedia Libre","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["an"]}],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":null,"maxVersion":null}],"targetPlatforms":[],"seen":true,"dependencies":[],"incognito":"spanning","userPermissions":{"permissions":[],"origins":[]},"icons":{"16":"favicon.ico"},"iconURL":null,"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"installTelemetryInfo":null,"recommendationState":null,"rootURI":"resource://search-extensions/wikipedia/","location":"app-builtin"}
+1665813447477addons.xpiDEBUGLoading bootstrap scope from resource://search-extensions/wikipedia/
+1665813447477addons.xpiDEBUGCalling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1665813447477addons.xpiDEBUGCalling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1665813451365addons.xpiDEBUGCalling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1665813451366addons.xpiDEBUGCalling bootstrap method shutdown on webcompat@mozilla.org version 6.2.0
+1665813451368addons.xpiDEBUGCalling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1665813451369addons.xpiDEBUGCalling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1665813451376addons.xpiDEBUGCalling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1665813451581addons.managerDEBUGbefore shutdown
+1665813451584addons.managerDEBUGshutdown
+1665813451584addons.managerDEBUGCalling shutdown blocker for XPIProvider
+1665813451585addons.xpiDEBUGshutdown
+1665813451585addons.xpi-utilsDEBUGshutdown
+1665813451585addons.managerDEBUGCalling shutdown blocker for GMPProvider
+1665813451585addons.managerDEBUGCalling shutdown blocker for PluginProvider
+1665813451585addons.managerDEBUGAsync provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 2796, Chrome_ChildThread] WARNING: pipe error: 109: file z[Parent 8252, Gecko_IOThread] WARNING: pipe error: 232: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 502
+
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'CBT-03-44', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:218)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+at generics.BaseTest.setup(BaseTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+n":"Вікіпэдыя, вольная энцыкляпэдыя","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["be-tarask"]},{"name":"Wikipedia (sv)","description":"Wikipedia, den fria encyklopedin","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sv-SE"]},{"name":"ວິກິພີເດຍ (lo)","description":"ວິກິພີເດຍ, ສາລານຸກົມເສລີ","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lo"]},{"name":"Wikipedija (sl)","description":"Wikipedija, prosta enciklopedija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sl"]},{"name":"Vikipēdija","description":"Vikipēdija, brīvā enciklopēdija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lv"]},{"name":"Biquipedia (an)","description":"A enciclopedia Libre","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["an"]}],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":null,"maxVersion":null}],"targetPlatforms":[],"seen":true,"dependencies":[],"incognito":"spanning","userPermissions":{"permissions":[],"origins":[]},"icons":{"16":"favicon.ico"},"iconURL":null,"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"installTelemetryInfo":null,"recommendationState":null,"rootURI":"resource://search-extensions/wikipedia/","location":"app-builtin"}
+1665813447477addons.xpiDEBUGLoading bootstrap scope from resource://search-extensions/wikipedia/
+1665813447477addons.xpiDEBUGCalling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1665813447477addons.xpiDEBUGCalling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1665813451365addons.xpiDEBUGCalling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1665813451366addons.xpiDEBUGCalling bootstrap method shutdown on webcompat@mozilla.org version 6.2.0
+1665813451368addons.xpiDEBUGCalling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1665813451369addons.xpiDEBUGCalling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1665813451376addons.xpiDEBUGCalling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1665813451581addons.managerDEBUGbefore shutdown
+1665813451584addons.managerDEBUGshutdown
+1665813451584addons.managerDEBUGCalling shutdown blocker for XPIProvider
+1665813451585addons.xpiDEBUGshutdown
+1665813451585addons.xpi-utilsDEBUGshutdown
+1665813451585addons.managerDEBUGCalling shutdown blocker for GMPProvider
+1665813451585addons.managerDEBUGCalling shutdown blocker for PluginProvider
+1665813451585addons.managerDEBUGAsync provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 2796, Chrome_ChildThread] WARNING: pipe error: 109: file z[Parent 8252, Gecko_IOThread] WARNING: pipe error: 232: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 502
+
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="login()[pri:0, instance:test.ActitimeLoginLogout@5386659f]" started-at="2022-10-15T11:28:10 IST" name="login" finished-at="2022-10-15T11:28:10 IST" duration-ms="14" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+  (Driver info: chromedriver=105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'CBT-03-44', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52862}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}), userDataDir=C:\Users\CBT\AppData\Local\Temp\scoped_dir8864_455656662}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=106.0.5249.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: faa14a40baab7086c9e5b0bd027af612]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=106.0.5249.119)
+  (Driver info: chromedriver=105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 5 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'CBT-03-44', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:52862}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, webauthn:extension:largeBlob=true, unexpectedAlertBehaviour=ignore, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=105.0.5195.52 (412c95e518836d8a7d97250d62b29c2ae6a26a85-refs/branch-heads/5195@{#853}), userDataDir=C:\Users\CBT\AppData\Local\Temp\scoped_dir8864_455656662}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=106.0.5249.119, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: faa14a40baab7086c9e5b0bd027af612
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+at generics.Screenshot.onTestSkipped(Screenshot.java:19)
+at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:87)
+at org.testng.internal.TestInvoker.runTestResultListener(TestInvoker.java:219)
+at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:447)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login()[pri:0, instance:test.ActitimeLoginLogout@5386659f]" started-at="2022-10-15T11:28:10 IST" name="login" finished-at="2022-10-15T11:28:10 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+n":"Вікіпэдыя, вольная энцыкляпэдыя","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["be-tarask"]},{"name":"Wikipedia (sv)","description":"Wikipedia, den fria encyklopedin","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sv-SE"]},{"name":"ວິກິພີເດຍ (lo)","description":"ວິກິພີເດຍ, ສາລານຸກົມເສລີ","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lo"]},{"name":"Wikipedija (sl)","description":"Wikipedija, prosta enciklopedija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sl"]},{"name":"Vikipēdija","description":"Vikipēdija, brīvā enciklopēdija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lv"]},{"name":"Biquipedia (an)","description":"A enciclopedia Libre","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["an"]}],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":null,"maxVersion":null}],"targetPlatforms":[],"seen":true,"dependencies":[],"incognito":"spanning","userPermissions":{"permissions":[],"origins":[]},"icons":{"16":"favicon.ico"},"iconURL":null,"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"installTelemetryInfo":null,"recommendationState":null,"rootURI":"resource://search-extensions/wikipedia/","location":"app-builtin"}
+1665813447477addons.xpiDEBUGLoading bootstrap scope from resource://search-extensions/wikipedia/
+1665813447477addons.xpiDEBUGCalling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1665813447477addons.xpiDEBUGCalling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1665813451365addons.xpiDEBUGCalling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1665813451366addons.xpiDEBUGCalling bootstrap method shutdown on webcompat@mozilla.org version 6.2.0
+1665813451368addons.xpiDEBUGCalling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1665813451369addons.xpiDEBUGCalling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1665813451376addons.xpiDEBUGCalling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1665813451581addons.managerDEBUGbefore shutdown
+1665813451584addons.managerDEBUGshutdown
+1665813451584addons.managerDEBUGCalling shutdown blocker for XPIProvider
+1665813451585addons.xpiDEBUGshutdown
+1665813451585addons.xpi-utilsDEBUGshutdown
+1665813451585addons.managerDEBUGCalling shutdown blocker for GMPProvider
+1665813451585addons.managerDEBUGCalling shutdown blocker for PluginProvider
+1665813451585addons.managerDEBUGAsync provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 2796, Chrome_ChildThread] WARNING: pipe error: 109: file z[Parent 8252, Gecko_IOThread] WARNING: pipe error: 232: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 502
+
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'CBT-03-44', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+n":"Вікіпэдыя, вольная энцыкляпэдыя","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["be-tarask"]},{"name":"Wikipedia (sv)","description":"Wikipedia, den fria encyklopedin","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sv-SE"]},{"name":"ວິກິພີເດຍ (lo)","description":"ວິກິພີເດຍ, ສາລານຸກົມເສລີ","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lo"]},{"name":"Wikipedija (sl)","description":"Wikipedija, prosta enciklopedija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sl"]},{"name":"Vikipēdija","description":"Vikipēdija, brīvā enciklopēdija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lv"]},{"name":"Biquipedia (an)","description":"A enciclopedia Libre","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["an"]}],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":null,"maxVersion":null}],"targetPlatforms":[],"seen":true,"dependencies":[],"incognito":"spanning","userPermissions":{"permissions":[],"origins":[]},"icons":{"16":"favicon.ico"},"iconURL":null,"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"installTelemetryInfo":null,"recommendationState":null,"rootURI":"resource://search-extensions/wikipedia/","location":"app-builtin"}
+1665813447477addons.xpiDEBUGLoading bootstrap scope from resource://search-extensions/wikipedia/
+1665813447477addons.xpiDEBUGCalling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1665813447477addons.xpiDEBUGCalling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1665813451365addons.xpiDEBUGCalling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1665813451366addons.xpiDEBUGCalling bootstrap method shutdown on webcompat@mozilla.org version 6.2.0
+1665813451368addons.xpiDEBUGCalling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1665813451369addons.xpiDEBUGCalling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1665813451376addons.xpiDEBUGCalling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1665813451581addons.managerDEBUGbefore shutdown
+1665813451584addons.managerDEBUGshutdown
+1665813451584addons.managerDEBUGCalling shutdown blocker for XPIProvider
+1665813451585addons.xpiDEBUGshutdown
+1665813451585addons.xpi-utilsDEBUGshutdown
+1665813451585addons.managerDEBUGCalling shutdown blocker for GMPProvider
+1665813451585addons.managerDEBUGCalling shutdown blocker for PluginProvider
+1665813451585addons.managerDEBUGAsync provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 2796, Chrome_ChildThread] WARNING: pipe error: 109: file z[Parent 8252, Gecko_IOThread] WARNING: pipe error: 232: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 502
+
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'CBT-03-44', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:124)
+at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:119)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:218)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:211)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:207)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+at generics.BaseTest.setup(BaseTest.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+n":"Вікіпэдыя, вольная энцыкляпэдыя","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["be-tarask"]},{"name":"Wikipedia (sv)","description":"Wikipedia, den fria encyklopedin","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sv-SE"]},{"name":"ວິກິພີເດຍ (lo)","description":"ວິກິພີເດຍ, ສາລານຸກົມເສລີ","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lo"]},{"name":"Wikipedija (sl)","description":"Wikipedija, prosta enciklopedija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["sl"]},{"name":"Vikipēdija","description":"Vikipēdija, brīvā enciklopēdija","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["lv"]},{"name":"Biquipedia (an)","description":"A enciclopedia Libre","creator":null,"developers":null,"translators":null,"contributors":null,"locales":["an"]}],"targetApplications":[{"id":"toolkit@mozilla.org","minVersion":null,"maxVersion":null}],"targetPlatforms":[],"seen":true,"dependencies":[],"incognito":"spanning","userPermissions":{"permissions":[],"origins":[]},"icons":{"16":"favicon.ico"},"iconURL":null,"blocklistState":0,"blocklistURL":null,"startupData":null,"hidden":true,"installTelemetryInfo":null,"recommendationState":null,"rootURI":"resource://search-extensions/wikipedia/","location":"app-builtin"}
+1665813447477addons.xpiDEBUGLoading bootstrap scope from resource://search-extensions/wikipedia/
+1665813447477addons.xpiDEBUGCalling bootstrap method install on wikipedia@search.mozilla.org version 1.0
+1665813447477addons.xpiDEBUGCalling bootstrap method startup on wikipedia@search.mozilla.org version 1.0
+1665813451365addons.xpiDEBUGCalling bootstrap method shutdown on wikipedia@search.mozilla.org version 1.0
+1665813451366addons.xpiDEBUGCalling bootstrap method shutdown on webcompat@mozilla.org version 6.2.0
+1665813451368addons.xpiDEBUGCalling bootstrap method shutdown on twitter@search.mozilla.org version 1.0
+1665813451369addons.xpiDEBUGCalling bootstrap method shutdown on screenshots@mozilla.org version 39.0.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on google@search.mozilla.org version 1.0
+1665813451372addons.xpiDEBUGCalling bootstrap method shutdown on formautofill@mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on ebay@search.mozilla.org version 1.0
+1665813451374addons.xpiDEBUGCalling bootstrap method shutdown on default-theme@mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on ddg@search.mozilla.org version 1.0
+1665813451375addons.xpiDEBUGCalling bootstrap method shutdown on bing@search.mozilla.org version 1.0
+1665813451376addons.xpiDEBUGCalling bootstrap method shutdown on amazondotcom@search.mozilla.org version 1.1
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 5476, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1665813451581addons.managerDEBUGbefore shutdown
+1665813451584addons.managerDEBUGshutdown
+1665813451584addons.managerDEBUGCalling shutdown blocker for XPIProvider
+1665813451585addons.xpiDEBUGshutdown
+1665813451585addons.xpi-utilsDEBUGshutdown
+1665813451585addons.managerDEBUGCalling shutdown blocker for GMPProvider
+1665813451585addons.managerDEBUGCalling shutdown blocker for PluginProvider
+1665813451585addons.managerDEBUGAsync provider shutdown done
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 2796, Chrome_ChildThread] WARNING: pipe error: 109: file z[Parent 8252, Gecko_IOThread] WARNING: pipe error: 232: file z:/task_1571244707/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 502
+
+at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:112)
+... 28 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test.ActitimeLoginLogout@5386659f]" started-at="2022-10-15T11:28:10 IST" name="teardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1665813490788" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="executioncomplete()[pri:0, instance:test.ActitimeLoginLogout@5386659f]" started-at="2022-10-15T11:28:10 IST" name="executioncomplete" finished-at="2022-10-15T11:28:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executioncomplete -->
+      </class> <!-- test.ActitimeLoginLogout -->
+    </test> <!-- TestFirefox -->
+  </suite> <!-- Suite -->
+</testng-results>
